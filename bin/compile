@@ -26,8 +26,7 @@ export DENO_INSTALL=$BUILD_DIR/.heroku
 export DENO_DIR=$BUILD_DIR/.heroku/cache
 curl -fsSL https://deno.land/x/install/install.sh | sh $INSTALL_VERSION_OPTION
 
-echo HOME=$HOME
-ls $HOME/.heroku/bin
+ls $BUILD_DIR/.heroku/bin
 
 # set environment variables
 PROFILE_PATH="$BUILD_DIR/.profile.d/deno.sh"
