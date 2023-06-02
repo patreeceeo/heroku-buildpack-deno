@@ -33,7 +33,8 @@ PROFILE_PATH="$BUILD_DIR/.profile.d/deno.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$HOME/.heroku/bin:$PATH"' >> $PROFILE_PATH
 echo 'export DENO_DIR="$HOME/.heroku/cache"' >> $PROFILE_PATH
-
+PATH="$HOME/.heroku/bin:$PATH"
+which deno
 set +e
 
 # download dependencies
